@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Fill</title>
+    <style>
+        .form-input {
+            border: 2px solid #9e9e9eb5;
+            border-radius: 6px;
+            height: 20px;
+            font-size: medium;
+            width: 200px;
+        }
+
+        .submit-button {
+            height: 40px;
+            width: 100%;
+            border: grey 1px solid;
+            box-shadow: black 0px 0px 1px 0px;
+            border-radius: 10px;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body style="font-size: large;">
+    <table style="width: 200px;">
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <img src="icon.gif" style="width: 200px;">
+            </td>
+        </tr>
+        <tr>
+            <td>XPath</td>
+            <td><input type="text" id="buttonXPathExt" class="form-input"></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td> <input type="time" id="timeExt" class="form-input" style="font-size: large;"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="radio" name="clientType" value="skype" id="skype" checked> <label
+                    for="skype">Skype</label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="radio" name="clientType" value="whatsapp" id="whatsapp"> <label
+                    for="whatsapp">Whatsapp</label></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: left;"><input type="radio" name="clientType" value="other" id="other">
+                <label for="other">Others</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 15px;">
+                <button id="press" class="submit-button">Activate</button>
+            </td>
+        </tr>
+    </table>
+    <script src="popup.js"></script>
+</body>
+
+</html>
